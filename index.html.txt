@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">CHARACTER</h1>
+
+<div id="characterList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

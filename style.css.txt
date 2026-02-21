@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+
+body {
+  background: #e6e6e6;
+  padding: 40px;
+}
+
+.character-card {
+  max-width: 950px;
+  margin: 0 auto 50px;
+  background: #fffaf5;
+  border-radius: 12px;
+  padding: 30px;
+  --mainColor: #6fb6e8;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 4px;
+  color: #5a2d1a;
+}
+
+.label {
+  background: var(--mainColor);
+  color: white;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin: 10px 0 20px;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+.image-area img {
+  height: 420px;
+}
+
+/* ===== テキストデザイン ===== */
+
+.profile-text {
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.name-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.name-main {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.name-ruby {
+  font-size: 14px;
+  color: var(--mainColor);
+  transform: translateY(-12px);
+}
+
+.basic-info {
+  margin: 10px 0 15px;
+  font-size: 15px;
+}
+
+.description-text {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.dark-box {
+  background: #000;
+  color: #d40000;
+  padding:15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.quote {
+  color: var(--mainColor);
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* ===== テーマカラー例 ===== */
+
+.character-card.purple { --mainColor: #61447c; }
+.character-card.red    { --mainColor: #832220; }
+.character-card.blue   { --mainColor: #15367e; }
+.character-card.green  { --mainColor: #0d3427; }
+.character-card.bluepurple   { --mainColor: #2b1578; }
+.character-card.redpurple    { --mainColor: #70157a; }
+.character-card.lightgreen   { --mainColor: #84cfcd; }
+.character-card.blackpink    { --mainColor: #93476c; }
+.character-card.blackred     { --mainColor: #370909; }
+.character-card.lightred     { --mainColor: #7e2734; }
+
+
+
+
+
+/* スマホ対応 */
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-area img {
+    height: 300px;
+  }
+}
